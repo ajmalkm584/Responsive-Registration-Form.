@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="incon" href="blod kio.jpg">
+    <!-- <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="main">
+        <br><br>
+        <div class="hello">
+            <br>
+            <div class="card">
+                <div class="pos">
+                    <h2>Regisration</h2>
+                </div>
+                <br>
+                <div class="">
+                    <h4 class="hi">Personal Details</h4>
+                </div>
+            </div>
+
+            <form id="name" action="" onsubmit="return hello()">
+                <div class="form_logo">
+                    <div>
+                        <label for="">Full Name <br></label>
+                        <input type="text" id="names" name="h" placeholder="enter your name">
+                    </div>
+                    <div>
+                        <label for="">Date of birth<br></label>
+                        <input type="text" id="date" name="k" placeholder="enter date of birth">
+                    </div>
+                    <div>
+                        <label for="">Email <br></label>
+                        <input type="text" id="Email" name="j" placeholder="enter your email">
+                    </div>
+                </div>
+                <div class="form_logo">
+                    <div>
+                        <label for="">Moblie Number <br></label>
+                        <input type="text" id="Moblie Number" name="number" placeholder="enter moblie number">
+                    </div>
+                    <div>
+                        <label for="">Gender<br></label>
+                        <input type="text" placeholder="enter your gender">
+                    </div>
+                    <div>
+                        <label for="">Occuption <br></label>
+                        <input type="text" placeholder="enter your Occuption">
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <h4 class="hi">Identity Details</h4>
+                </div>
+                <div class="form_logo">
+                    <div>
+                        <label for="">ID type <br></label>
+                        <input type="text" placeholder="enter  id type">
+                    </div>
+                    <div>
+                        <label for="">Id Number <br></label>
+                        <input type="text" placeholder="enter Id number">
+                    </div>
+                    <div>
+                        <label for="">Issus Autthorty<br></label>
+                        <input type="text" placeholder="enter issus Autthorty">
+                    </div>
+                </div>
+                <div class="form_logo">
+                    <div>
+                        <label for="">Issu Date <br></label>
+                        <input type="text" placeholder="enter issu Date">
+                    </div>
+                    <div>
+                        <label for="">State Date<br></label>
+                        <input type="text" placeholder="enter id State Date">
+                    </div>
+                    <div>
+                        <label for="">Expiry Date <br></label>
+                        <input type="text" placeholder="enter Id Expiry Date">
+                    </div>
+                </div><br>
+                <div class="submit">
+                    <button>Next-></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br>
+</body>
+<script>
+    let h = document.getElementById("name").value;
+    let k = document.getElementById("date").value;
+    let j = document.getElementById("email").value;
+    let number = document.getElementById("Moblie Number").value;
+
+    function hello() {
+        if (h === "" || k === "" || j === "" || number === "") {
+            alert("hello sir");
+            return false;
+        }
+        return true
+    }
+
+
+
+</script>
+
+</html>
+
+
+
+<!-- all fields requied -->
